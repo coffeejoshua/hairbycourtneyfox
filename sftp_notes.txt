@@ -1,0 +1,2 @@
+sftp hbcf
+put -r public_html/*
