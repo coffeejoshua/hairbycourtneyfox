@@ -6,3 +6,7 @@ lpwd
 pwd
 
 put -r ./ ./
+
+#last time I had to chmod the website directory.
+#I changed perms on local directory and hopefully that will fix it next time.
+chmod 755 /home/coufox/hairbycourtneyfox.com
