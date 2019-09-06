@@ -1,0 +1,8 @@
+sftp hbcf 
+
+lcd /Users/joshua.fox/projects/hairbycourtneyfox/public_html
+cd /home/coufox/hairbycourtneyfox.com
+lpwd
+pwd
+
+put -r ./ ./

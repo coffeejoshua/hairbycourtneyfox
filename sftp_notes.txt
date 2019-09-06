@@ -1,4 +1,0 @@
-sftp hbcf
-put ./public_html/index.html /home/hairbyco/public_html/
-
-put -r ./public_html/ public_html/
