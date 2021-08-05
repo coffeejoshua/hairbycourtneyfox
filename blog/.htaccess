@@ -1,0 +1,27 @@
+
+# BEGIN WordPress
+AddHandler application/x-httpd-ea-php70 .php
+<IfModule mod_expires.c>
+	ExpiresActive On
+	ExpiresByType image/jpg "access plus 6 hours"
+	ExpiresByType image/jpeg "access plus 6 hours"
+	ExpiresByType image/gif "access plus 6 hours"
+	ExpiresByType image/png "access plus 6 hours"
+	ExpiresByType text/css "access plus 6 hours"
+	ExpiresByType application/pdf "access plus 1 week"
+	ExpiresByType text/javascript "access plus 6 hours"
+	ExpiresByType text/html "access plus 10 minutes"
+	ExpiresByType image/x-icon "access plus 1 year"
+	ExpiresDefault "access plus 3 hours"
+</IfModule>
+Header set X-Endurance-Cache-Level "2"
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /blog/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /blog/index.php [L]
+</IfModule>
+
+# END WordPress
