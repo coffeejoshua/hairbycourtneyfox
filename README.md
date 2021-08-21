@@ -2,11 +2,11 @@
 
 ## Build and publish
 
-(WIP)
 Using [AWS Amplify](https://us-west-1.console.aws.amazon.com/amplify/) to automatically build and publish the site.
 
 Push or merge to `develop` branch for feature version of the site (password protected).
-Merge to `production` branch and Amplify will build and publish to public version of the site.
+Merge to `production` branch for public version of the site.
+Push or merge to any other branch for no automation.
 
 ## Libraries used
 
