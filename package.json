@@ -40,14 +40,14 @@
     },
     "devDependencies": {
         "autoprefixer": "10.3.1",
-        "browser-sync": "2.27.5",
+        "browser-sync": "^2.29.3",
         "chokidar": "3.5.2",
         "concurrently": "6.2.0",
         "postcss": "8.3.6",
         "prettier": "2.3.2",
         "pug": "3.0.2",
         "sass": "1.37.5",
-        "shelljs": "0.8.4",
+        "shelljs": "^0.8.5",
         "upath": "2.0.1"
     }
 }
