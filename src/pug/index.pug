@@ -31,6 +31,9 @@ html(lang='en')
 
     body#page-top
 
+        // The current year is used to calculate years of experience, copyright date, etc (later)
+        script(src="js/getYears.js")
+
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
             .container.px-4.px-lg-5
@@ -68,7 +71,7 @@ html(lang='en')
                         h2.text-white.mb-4 Hair by Courtney
                         p.text-white-50
                             | Let's design your perfect hair! I love to be creative and make your hair dreams come true.
-                            | I completed cosmetology school in 2005 and have over 15 years of experience specializing in color, color correction, and extensions.
+                            | I completed cosmetology school in 2005 and have over <span id="yearsExp"></span> years of experience specializing in color, color correction, and extensions.
                             img.img-fluid(src='assets/img/hair.jpg', alt='Courtney customer hair color results, 6 different colors')
         // Stuff in the white background area
         section#projects.projects-section.bg-light
@@ -157,7 +160,7 @@ html(lang='en')
         // Footer
         footer.footer.bg-black.small.text-center.text-white-50
             .container.px-4.px-lg-5
-                | Copyright &copy; Courtney Fox 2021
+                | Copyright &copy; Courtney Fox <span id="currentYear"></span>
 
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js')
