@@ -5,7 +5,7 @@
 Using [AWS Amplify](https://us-west-1.console.aws.amazon.com/amplify/) to automatically build and publish the site.
 
 * Using git flow model, make changes in a branch or fork
-* When ready for a release, ush or merge to `develop` branch and AWS will build it to a test [feature version](https://develop.dh5yumej29mt8.amplifyapp.com/) of the site.
+* When ready for a release, push or merge to `develop` branch and AWS will build it to a test [feature version](https://develop.dh5yumej29mt8.amplifyapp.com/) of the site.
 * After functionally testing and things are looking good, merge to `production` branch for public version of the site which is also automatically built and published.
 * Push or merge to any other branch for no automation.
 
